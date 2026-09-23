@@ -8,6 +8,14 @@ I'm seeking internship opportunities in **Data Analytics, Data Science, and Appl
 
 ## Selected project experience
 
+### Marketplace Learning-to-Rank — Datathon 2026 Final
+
+A team real-estate recommendation project combining five candidate sources, LightGBM LambdaRank, and marketplace-oriented reranking. **Team IKIGAI received Third Prize.**
+
+[Read the case study](projects/marketplace-ranking-datathon-final/README.md) · [Explore the technical notes](projects/marketplace-ranking-datathon-final/TECHNICAL_NOTES.md)
+
+**My contributions:** contributed to assigned technical implementation work and the presentation/defense. The case study describes the modeling pipeline as a team deliverable.
+
 ### Revenue Forecasting — Datathon 2026, Round 1
 
 A team competition project combining e-commerce business diagnosis with daily revenue and COGS forecasting.
@@ -49,12 +57,12 @@ A research communication project proposing traffic-light timing informed by obse
 
 ## Highlights
 
-- **Third Prize — DATATHON 2026 Final** · Team award.
+- **Third Prize — DATATHON 2026 Final** · Team IKIGAI · [Project case study](projects/marketplace-ranking-datathon-final/README.md).
 - **First Prize — Faculty-level 3MT 2025** · Team award; contributed the original project idea.
 
 ## Explore my portfolio
 
-[Browse all four projects](projects/README.md) for project summaries, personal contributions, technical notes, and evidence. The collection covers forecasting, a runnable recommendation demo, Tableau business intelligence, and research communication. Original datasets remain private.
+[Browse all five projects](projects/README.md) for project summaries, personal contributions, technical notes, and evidence. The collection covers marketplace ranking, forecasting, a runnable recommendation demo, Tableau business intelligence, and research communication. Original datasets remain private.
 
 ## Connect
 
