@@ -18,7 +18,9 @@ A team competition project combining e-commerce business diagnosis with daily re
 
 ### Data Explorers — Tableau Dashboard
 
-A team project combining data preparation and dashboard-based communication.
+A Tableau project covering insurance business results, customer and product analysis, and KPI performance across three dashboards.
+
+[Read the case study](projects/data-explorers-tableau/README.md) · [Explore the metric definitions](projects/data-explorers-tableau/METRICS.md)
 
 **My contributions:** contributed to data cleaning and modeling, helped coordinate task allocation, and structured the presentation content.
 
@@ -42,7 +44,7 @@ A proposed solution exploring adaptive traffic-light control.
 
 ## Currently building
 
-The first [project case study](projects/revenue-forecasting-datathon/README.md) is available, covering the business problem, my contributions, implementation, and evaluation limitations. I'm preparing the remaining projects for this portfolio.
+Two case studies are available: [Revenue Forecasting](projects/revenue-forecasting-datathon/README.md) and [Insurance BI with Tableau](projects/data-explorers-tableau/README.md). Each documents the problem, my contributions, and the evidence behind the work. I'm preparing the remaining projects for this portfolio.
 
 ## Connect
 
