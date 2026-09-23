@@ -26,7 +26,9 @@ A Tableau project covering insurance business results, customer and product anal
 
 ### Adaptive Traffic Lights — 3MT 2025
 
-A proposed solution exploring adaptive traffic-light control.
+A research communication project proposing traffic-light timing informed by observed traffic conditions.
+
+[Read the case study](projects/adaptive-traffic-lights-3mt/README.md) · [Explore the design notes](projects/adaptive-traffic-lights-3mt/DESIGN_NOTES.md)
 
 **My contributions:** originated the idea, defined the problem and proposed solution, and contributed to presenting and defending the proposal. This was a concept and presentation project, not a deployed traffic-control system.
 
@@ -42,9 +44,9 @@ A proposed solution exploring adaptive traffic-light control.
 - **Third Prize — DATATHON 2026 Final** · Team award.
 - **First Prize — Faculty-level 3MT 2025** · Team award; contributed the original project idea.
 
-## Currently building
+## Explore my portfolio
 
-Two case studies are available: [Revenue Forecasting](projects/revenue-forecasting-datathon/README.md) and [Insurance BI with Tableau](projects/data-explorers-tableau/README.md). Each documents the problem, my contributions, and the evidence behind the work. I'm preparing the remaining projects for this portfolio.
+[Browse all three case studies](projects/README.md) for project summaries, personal contributions, technical notes, and evidence. The collection covers forecasting, Tableau business intelligence, and research communication.
 
 ## Connect
 
