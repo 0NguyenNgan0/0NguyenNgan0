@@ -1,16 +1,47 @@
-## Hi there 👋
+# Hi, I'm Ngân
 
-<!--
-**0NguyenNgan0/0NguyenNgan0** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Mathematics & Data Science student · Data Analytics · Machine Learning · Applied AI
 
-Here are some ideas to get you started:
+I'm Nguyễn Thanh Ngân, a Mathematics and Data Science student at the University of Science, VNU-HCM. I'm interested in turning real-world problems into data workflows, forecasting models, and useful AI applications.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I'm seeking internship opportunities in **Data Analytics, Data Science, and Applied AI**.
+
+## Selected project experience
+
+### Revenue Forecasting — Datathon 2026, Round 1
+
+A team competition project focused on forecasting revenue.
+
+**My contributions:** contributed to data auditing and cleaning, feature engineering, ensemble forecasting, leakage-aware validation, model optimization, and post-processing.
+
+### Data Explorers — Tableau Dashboard
+
+A team project combining data preparation and dashboard-based communication.
+
+**My contributions:** contributed to data cleaning and modeling, helped coordinate task allocation, and structured the presentation content.
+
+### Adaptive Traffic Lights — 3MT 2025
+
+A proposed solution exploring adaptive traffic-light control.
+
+**My contributions:** originated the idea, defined the problem and proposed solution, and contributed to presenting and defending the proposal. This was a concept and presentation project, not a deployed traffic-control system.
+
+## Areas of experience
+
+- **Data preparation:** data-quality checks, cleaning, and data modeling.
+- **Predictive modeling:** feature engineering, ensemble forecasting, validation, and leakage prevention.
+- **Communication:** presentation structure, technical discussions, and team task coordination.
+- **Tools used in projects:** Python, Jupyter Notebook, and Tableau.
+
+## Highlights
+
+- **Third Prize — DATATHON 2026 Final** · Team award.
+- **First Prize — Faculty-level 3MT 2025** · Team award; contributed the original project idea.
+
+## Currently building
+
+I'm preparing selected projects for this portfolio, with clear documentation of the problem, my contributions, evaluation approach, and limitations.
+
+## Connect
+
+[LinkedIn](https://www.linkedin.com/in/ng%C3%A2n-nguy%E1%BB%85n-796678359)
