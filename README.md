@@ -10,7 +10,9 @@ I'm seeking internship opportunities in **Data Analytics, Data Science, and Appl
 
 ### Revenue Forecasting — Datathon 2026, Round 1
 
-A team competition project focused on forecasting revenue.
+A team competition project combining e-commerce business diagnosis with daily revenue and COGS forecasting.
+
+[Read the case study](projects/revenue-forecasting-datathon/README.md) · [Explore the team code](https://github.com/DinhVinhBinhNghi/Datathon2026)
 
 **My contributions:** contributed to data auditing and cleaning, feature engineering, ensemble forecasting, leakage-aware validation, model optimization, and post-processing.
 
@@ -40,7 +42,7 @@ A proposed solution exploring adaptive traffic-light control.
 
 ## Currently building
 
-I'm preparing selected projects for this portfolio, with clear documentation of the problem, my contributions, evaluation approach, and limitations.
+The first [project case study](projects/revenue-forecasting-datathon/README.md) is available, covering the business problem, my contributions, implementation, and evaluation limitations. I'm preparing the remaining projects for this portfolio.
 
 ## Connect
 
