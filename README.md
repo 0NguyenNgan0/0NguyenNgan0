@@ -1,69 +1,43 @@
 # Hi, I'm Ngân
 
-### Mathematics & Data Science student · Data Analytics · Machine Learning · Applied AI
+**Mathematics & Data Science student at HCMUS, VNU-HCM**
 
-I'm Nguyễn Thanh Ngân, a Mathematics and Data Science student at the University of Science, VNU-HCM. I'm interested in turning real-world problems into data workflows, forecasting models, and useful AI applications.
+I'm Nguyễn Thanh Ngân, interested in data analytics, machine learning, and applied AI. I'm seeking **Data Analytics, Data Science, and Applied AI internships**.
 
-I'm seeking internship opportunities in **Data Analytics, Data Science, and Applied AI**.
+[LinkedIn](https://www.linkedin.com/in/ng%C3%A2n-nguy%E1%BB%85n-796678359) · [All five projects](projects/README.md)
 
-## Selected project experience
+## Featured projects
 
-### Marketplace Learning-to-Rank — Datathon 2026 Final
+### Marketplace Learning-to-Rank · Datathon 2026 Final
 
-A team real-estate recommendation project combining five candidate sources, LightGBM LambdaRank, and marketplace-oriented reranking. **Team IKIGAI received Third Prize.**
+Real-estate recommendations using five candidate sources, LightGBM LambdaRank, and marketplace-oriented reranking. **Team IKIGAI won Third Prize.**
 
-[Read the case study](projects/marketplace-ranking-datathon-final/README.md) · [Explore the technical notes](projects/marketplace-ranking-datathon-final/TECHNICAL_NOTES.md)
+My contribution: assigned technical implementation work and presentation/defense within the team.
 
-**My contributions:** contributed to assigned technical implementation work and the presentation/defense. The case study describes the modeling pipeline as a team deliverable.
+[Case study](projects/marketplace-ranking-datathon-final/README.md) · [Technical notes](projects/marketplace-ranking-datathon-final/TECHNICAL_NOTES.md)
 
-### Revenue Forecasting — Datathon 2026, Round 1
+### Hybrid Product Recommender · Runnable demo
 
-A team competition project combining e-commerce business diagnosis with daily revenue and COGS forecasting.
+A Python demo combining implicit ALS, TF-IDF, cold-start routing, and chronological evaluation. Includes a notebook and behavioral tests.
 
-[Read the case study](projects/revenue-forecasting-datathon/README.md) · [Explore the team code](https://github.com/DinhVinhBinhNghi/Datathon2026)
+A new synthetic-data adaptation of a team course project; my original contributions covered shared data preparation, hybrid design, evaluation, and debugging.
 
-**My contributions:** contributed to data auditing and cleaning, feature engineering, ensemble forecasting, leakage-aware validation, model optimization, and post-processing.
+[Run the demo](projects/hybrid-product-recommender/README.md) · [Notebook](projects/hybrid-product-recommender/demo.ipynb) · [Synthetic results](projects/hybrid-product-recommender/RESULTS.md)
 
-### Hybrid Product Recommender — Runnable Demo
+### Revenue Forecasting · Datathon 2026 Round 1
 
-A synthetic-data Python demo combining implicit ALS, TF-IDF product content, and cold-start routing, with chronological evaluation and behavioral tests.
+A team project combining e-commerce business diagnosis with revenue and COGS forecasting.
 
-[Explore the runnable project](projects/hybrid-product-recommender/README.md) · [Open the notebook](projects/hybrid-product-recommender/demo.ipynb) · [Read the synthetic results](projects/hybrid-product-recommender/RESULTS.md)
+My contribution: data audit/cleaning, features, ensemble forecasting, leakage-aware validation, optimization, and post-processing.
 
-**My contributions to the original team project:** shared work on problem definition, data preparation/EDA, hybrid and cold-start design, evaluation, debugging, and task coordination. The public demo is a new portfolio adaptation; its synthetic results do not reproduce the original experiment.
+[Case study](projects/revenue-forecasting-datathon/README.md) · [Team code](https://github.com/DinhVinhBinhNghi/Datathon2026)
 
-### Data Explorers — Tableau Dashboard
+## More to explore
 
-A Tableau project covering insurance business results, customer and product analysis, and KPI performance across three dashboards.
+- [Tableau business intelligence](projects/data-explorers-tableau/README.md) — cleaning/modeling, task coordination, and presentation structure.
+- [Adaptive Traffic Lights · 3MT 2025](projects/adaptive-traffic-lights-3mt/README.md) — original idea and proposal presentation; **First Prize at faculty level**, a team award.
 
-[Read the case study](projects/data-explorers-tableau/README.md) · [Explore the metric definitions](projects/data-explorers-tableau/METRICS.md)
+**Project tools:** Python · Jupyter · Tableau  
+**Focus:** data preparation, predictive modeling, evaluation, and technical communication.
 
-**My contributions:** contributed to data cleaning and modeling, helped coordinate task allocation, and structured the presentation content.
-
-### Adaptive Traffic Lights — 3MT 2025
-
-A research communication project proposing traffic-light timing informed by observed traffic conditions.
-
-[Read the case study](projects/adaptive-traffic-lights-3mt/README.md) · [Explore the design notes](projects/adaptive-traffic-lights-3mt/DESIGN_NOTES.md)
-
-**My contributions:** originated the idea, defined the problem and proposed solution, and contributed to presenting and defending the proposal. This was a concept and presentation project, not a deployed traffic-control system.
-
-## Areas of experience
-
-- **Data preparation:** data-quality checks, cleaning, and data modeling.
-- **Predictive modeling:** feature engineering, ensemble forecasting, validation, and leakage prevention.
-- **Communication:** presentation structure, technical discussions, and team task coordination.
-- **Tools used in projects:** Python, Jupyter Notebook, and Tableau.
-
-## Highlights
-
-- **Third Prize — DATATHON 2026 Final** · Team IKIGAI · [Project case study](projects/marketplace-ranking-datathon-final/README.md).
-- **First Prize — Faculty-level 3MT 2025** · Team award; contributed the original project idea.
-
-## Explore my portfolio
-
-[Browse all five projects](projects/README.md) for project summaries, personal contributions, technical notes, and evidence. The collection covers marketplace ranking, forecasting, a runnable recommendation demo, Tableau business intelligence, and research communication. Original datasets remain private.
-
-## Connect
-
-[LinkedIn](https://www.linkedin.com/in/ng%C3%A2n-nguy%E1%BB%85n-796678359)
+Each case study distinguishes my contribution from the team's output. Original datasets remain private; the runnable demo uses synthetic data only.

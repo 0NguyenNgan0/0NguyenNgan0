@@ -1,5 +1,7 @@
 # Hybrid Product Recommender
 
+[![Recommender CI](https://github.com/0NguyenNgan0/0NguyenNgan0/actions/workflows/recommender-ci.yml/badge.svg?branch=main)](https://github.com/0NguyenNgan0/0NguyenNgan0/actions/workflows/recommender-ci.yml)
+
 **Runnable Python demo · implicit ALS · TF-IDF · cold-start routing · synthetic data only**
 
 A small product recommendation pipeline combining collaborative signals with product metadata. It demonstrates how recommendations change for users with rich history, sparse history, or no history, and compares four methods on a chronological holdout.
@@ -44,6 +46,14 @@ python -m recommender --seed 17 --k 5
 ```
 
 To explore the notebook, open `demo.ipynb` in a Python notebook editor with the same environment, or install JupyterLab separately (`python -m pip install jupyterlab`) and run `jupyter lab demo.ipynb` from this folder. Jupyter is optional; the CLI is the primary reproducible entry point.
+
+## Automated checks
+
+[Recommender CI](https://github.com/0NguyenNgan0/0NguyenNgan0/actions/workflows/recommender-ci.yml) runs on Ubuntu and Windows with Python 3.12. It installs the pinned direct dependencies, checks dependency compatibility, runs the unit tests, and executes the synthetic CLI with two configurations. The default run also checks the report-writing path.
+
+The workflow triggers on pushes and pull requests to `main` that change this project or its workflow file. It can also be started manually from the Actions tab. Only synthetic data is generated; no dataset, API key, or repository secret is needed. The workflow has read-only repository permissions and does not publish generated reports.
+
+The badge links to the actual run status. These checks cover the synthetic recommender, not the original team notebook or the separate Datathon pipelines.
 
 ## What the pipeline does
 
