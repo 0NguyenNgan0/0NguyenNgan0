@@ -1,0 +1,166 @@
+{
+  "data": "synthetic_only",
+  "k": 10,
+  "users_in_holdout": 80,
+  "evaluated_users": 80,
+  "skipped_no_novel_items": 0,
+  "cohort_counts": {
+    "warm": 60,
+    "sparse": 10,
+    "new": 10
+  },
+  "methods": {
+    "popularity": {
+      "precision_at_k": 0.05625,
+      "recall_at_k": 0.15492559523809524,
+      "ndcg_at_k": 0.10581195502255984,
+      "catalog_coverage": 0.2638888888888889,
+      "by_cohort": {
+        "warm": {
+          "precision_at_k": 0.04666666666666666,
+          "recall_at_k": 0.1636111111111111,
+          "ndcg_at_k": 0.1107711078377857
+        },
+        "sparse": {
+          "precision_at_k": 0.1,
+          "recall_at_k": 0.14345238095238094,
+          "ndcg_at_k": 0.10857664054061109
+        },
+        "new": {
+          "precision_at_k": 0.06999999999999999,
+          "recall_at_k": 0.11428571428571428,
+          "ndcg_at_k": 0.07329235261315349
+        }
+      }
+    },
+    "als": {
+      "precision_at_k": 0.1125,
+      "recall_at_k": 0.27598214285714284,
+      "ndcg_at_k": 0.2223451626393677,
+      "catalog_coverage": 0.8888888888888888,
+      "by_cohort": {
+        "warm": {
+          "precision_at_k": 0.09833333333333333,
+          "recall_at_k": 0.29,
+          "ndcg_at_k": 0.22906038483542918
+        },
+        "sparse": {
+          "precision_at_k": 0.24000000000000005,
+          "recall_at_k": 0.35357142857142854,
+          "ndcg_at_k": 0.3311066394892131
+        },
+        "new": {
+          "precision_at_k": 0.06999999999999999,
+          "recall_at_k": 0.11428571428571428,
+          "ndcg_at_k": 0.07329235261315349
+        }
+      }
+    },
+    "content": {
+      "precision_at_k": 0.20875,
+      "recall_at_k": 0.5689434523809525,
+      "ndcg_at_k": 0.4231209358105989,
+      "catalog_coverage": 1.0,
+      "by_cohort": {
+        "warm": {
+          "precision_at_k": 0.22166666666666665,
+          "recall_at_k": 0.6727777777777777,
+          "ndcg_at_k": 0.4946726878416661
+        },
+        "sparse": {
+          "precision_at_k": 0.27,
+          "recall_at_k": 0.4005952380952381,
+          "ndcg_at_k": 0.3436390068216407
+        },
+        "new": {
+          "precision_at_k": 0.06999999999999999,
+          "recall_at_k": 0.11428571428571428,
+          "ndcg_at_k": 0.07329235261315349
+        }
+      }
+    },
+    "hybrid": {
+      "precision_at_k": 0.19375,
+      "recall_at_k": 0.5222767857142857,
+      "ndcg_at_k": 0.38834909204355555,
+      "catalog_coverage": 1.0,
+      "by_cohort": {
+        "warm": {
+          "precision_at_k": 0.20166666666666666,
+          "recall_at_k": 0.6105555555555555,
+          "ndcg_at_k": 0.4483102294856084
+        },
+        "sparse": {
+          "precision_at_k": 0.27,
+          "recall_at_k": 0.4005952380952381,
+          "ndcg_at_k": 0.3436390068216407
+        },
+        "new": {
+          "precision_at_k": 0.06999999999999999,
+          "recall_at_k": 0.11428571428571428,
+          "ndcg_at_k": 0.07329235261315349
+        }
+      }
+    }
+  },
+  "configuration": {
+    "seed": 42,
+    "cutoff": "2025-02-01T00:00:00+00:00",
+    "products": 72,
+    "train_events": 1362,
+    "test_events": 640,
+    "als_weight": 0.6
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scikit_learn": "1.8.0"
+  },
+  "examples": {
+    "demo_user_000": {
+      "route": "hybrid",
+      "items": [
+        "demo_item_009",
+        "demo_item_002",
+        "demo_item_005",
+        "demo_item_011",
+        "demo_item_004",
+        "demo_item_026",
+        "demo_item_025",
+        "demo_item_008",
+        "demo_item_027",
+        "demo_item_018"
+      ]
+    },
+    "demo_user_060": {
+      "route": "content",
+      "items": [
+        "demo_item_001",
+        "demo_item_007",
+        "demo_item_013",
+        "demo_item_016",
+        "demo_item_000",
+        "demo_item_002",
+        "demo_item_003",
+        "demo_item_005",
+        "demo_item_006",
+        "demo_item_008"
+      ]
+    },
+    "demo_user_070": {
+      "route": "popularity",
+      "items": [
+        "demo_item_001",
+        "demo_item_037",
+        "demo_item_006",
+        "demo_item_056",
+        "demo_item_011",
+        "demo_item_050",
+        "demo_item_007",
+        "demo_item_000",
+        "demo_item_046",
+        "demo_item_060"
+      ]
+    }
+  }
+}

@@ -16,6 +16,14 @@ A team competition project combining e-commerce business diagnosis with daily re
 
 **My contributions:** contributed to data auditing and cleaning, feature engineering, ensemble forecasting, leakage-aware validation, model optimization, and post-processing.
 
+### Hybrid Product Recommender — Runnable Demo
+
+A synthetic-data Python demo combining implicit ALS, TF-IDF product content, and cold-start routing, with chronological evaluation and behavioral tests.
+
+[Explore the runnable project](projects/hybrid-product-recommender/README.md) · [Open the notebook](projects/hybrid-product-recommender/demo.ipynb) · [Read the synthetic results](projects/hybrid-product-recommender/RESULTS.md)
+
+**My contributions to the original team project:** shared work on problem definition, data preparation/EDA, hybrid and cold-start design, evaluation, debugging, and task coordination. The public demo is a new portfolio adaptation; its synthetic results do not reproduce the original experiment.
+
 ### Data Explorers — Tableau Dashboard
 
 A Tableau project covering insurance business results, customer and product analysis, and KPI performance across three dashboards.
@@ -46,7 +54,7 @@ A research communication project proposing traffic-light timing informed by obse
 
 ## Explore my portfolio
 
-[Browse all three case studies](projects/README.md) for project summaries, personal contributions, technical notes, and evidence. The collection covers forecasting, Tableau business intelligence, and research communication.
+[Browse all four projects](projects/README.md) for project summaries, personal contributions, technical notes, and evidence. The collection covers forecasting, a runnable recommendation demo, Tableau business intelligence, and research communication. Original datasets remain private.
 
 ## Connect
 
