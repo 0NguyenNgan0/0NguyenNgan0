@@ -1,4 +1,4 @@
-# Technical walkthrough & reproduction
+# Technical design & evaluation
 
 [Case study](README.md) · [Evidence & limitations](EVIDENCE.md)
 
@@ -6,22 +6,11 @@
 
 This page documents the team's existing final-submission script. It is not a new implementation or a claim that a fresh training run has been completed.
 
-Reviewed source: [`scripts/run_forecast_final.py`](https://github.com/DinhVinhBinhNghi/Datathon2026/blob/97d72fc24bca0fc40763890ac717c1ccb07f54cd/scripts/run_forecast_final.py), commit `97d72fc24bca0fc40763890ac717c1ccb07f54cd`.
+The source was supplied privately for review. Original files and links to repositories containing the competition materials are omitted from this public page. Numerical constants below describe implementation settings, not measured business outcomes.
 
 ## 1. Build calendar and historical summaries
 
-The script reads six CSV files. It derives date fields and cyclical features, then adds summaries from sales, inventory, web traffic, returns, and shipments.
-
-| Input file | Columns consumed by the reviewed script |
-| --- | --- |
-| `sales.csv` | `Date`, `Revenue`, `COGS` |
-| `sample_submission.csv` | `Date` |
-| `inventory.csv` | `snapshot_date`, `stockout_days`, `fill_rate`, `sell_through_rate` |
-| `web_traffic.csv` | `date`, `sessions`, `unique_visitors` |
-| `returns.csv` | `return_date` |
-| `shipments.csv` | `ship_date`, `delivery_date`, `shipping_fee` |
-
-The original README also lists `promotions.csv`, but the reviewed final forecasting script does not read it. Other team analysis scripts may require additional files.
+The script derives date fields and cyclical features, then adds historical summaries from sales, inventory, web traffic, returns, and shipments. A separate input specifies the prediction dates. This page describes input categories without distributing records or their aggregate values.
 
 The final feature list contains:
 
@@ -35,7 +24,7 @@ The final feature list contains:
 
 The script fits LightGBM, XGBoost, and CatBoost to `log1p(Revenue)` using seeds `42, 1337, 2024, 7, 99`. Predictions are transformed back with `expm1` and averaged across models and seeds.
 
-This runs separately for 2013–2018 and 2019–2022. The final revenue blend is equivalent to:
+This runs separately for earlier and later historical periods. The final revenue blend is equivalent to:
 
 ```text
 model_signal = 0.54 * ensemble_A + 0.46 * ensemble_B
@@ -62,55 +51,21 @@ COGS = Revenue * (1 - blended_margin)
 
 Historical month/day COGS-to-revenue patterns then adjust selected dates. These adjustments can move final COGS outside the initial margin bounds; the clipped margin should not be described as a guarantee on the final output.
 
-## 4. Run the original script
+## 4. Reproduction boundary
 
-Obtain the competition CSVs through an authorized source. The portfolio does not distribute them.
+The original training data and team source package are not distributed here. Source inspection is the basis for this walkthrough; training and evaluation have not been rerun for this portfolio.
 
-Clone the original team repository and select the reviewed version:
+For an executable example that needs no original project data, see the separate [synthetic recommender demo](../hybrid-product-recommender/README.md). That demo does not reproduce or validate this forecasting model.
 
-```bash
-git clone https://github.com/DinhVinhBinhNghi/Datathon2026.git
-cd Datathon2026
-git checkout 97d72fc24bca0fc40763890ac717c1ccb07f54cd
-python -m venv .venv
-```
+## 5. Output checks and explanation limits
 
-Activate the environment:
+The script exports dated Revenue and COGS predictions. Before using any new submission, verify its date order against the requested dates, uniqueness, row count, column order, finite values, and non-negative predictions. Those explicit submission assertions are absent from the reviewed final script.
 
-```powershell
-# Windows PowerShell
-.\.venv\Scripts\Activate.ps1
-```
-
-```bash
-# macOS / Linux
-source .venv/bin/activate
-```
-
-Install dependencies and place the six input CSVs in `data/raw/`:
-
-```bash
-python -m pip install -r requirements.txt
-python scripts/run_forecast_final.py --data-dir data/raw --out submissions/submission.csv
-```
-
-Run from the team repository root. The requirements file does not pin package versions; this is a reproduction guide, not a verified environment lockfile. The reviewed script trains 30 revenue models, 10 margin models, and one additional diagnostic model.
-
-## 5. Interpret the outputs
-
-| Output | Meaning |
-| --- | --- |
-| `submissions/submission.csv` | Predicted `Date, Revenue, COGS` |
-| `outputs/modeling/shap_group_comparison.csv` | Fixed percentages exported by the script; not newly calculated SHAP values |
-| `outputs/modeling/feature_group_importance_comparison.csv` | A duplicate of that fixed-percentage table |
-
-The script does not itself render the SHAP chart, despite the original README describing the PNG as a run output.
-
-Before using a new submission, independently verify exact date order against the sample, unique dates, matching row count, column order, finite values, and non-negative predictions. The reviewed script writes the CSV but does not contain the explicit submission assertions described in the original documentation.
+The script also exports two copies of a fixed-percentage feature-group table. These percentages are not newly calculated SHAP values and should not be presented as verified model explanations. The script does not itself render a SHAP chart.
 
 ## 6. Evaluation that remains to be reproduced
 
-The team report mentions a 2021–2022 time-based holdout. The final-submission script does not perform that split or calculate holdout metrics.
+The team report mentions a time-based holdout. The final-submission script does not perform that split or calculate holdout metrics.
 
 A defensible backtest should:
 

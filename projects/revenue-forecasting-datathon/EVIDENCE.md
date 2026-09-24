@@ -1,55 +1,44 @@
 # Evidence, attribution & limitations
 
-[Case study](README.md) · [Technical walkthrough](TECHNICAL_NOTES.md)
+[Case study](README.md) · [Technical notes](TECHNICAL_NOTES.md)
 
-## Source material
+## Source material and publication boundaries
 
-| Source | Used for |
-| --- | --- |
-| Supplied `Report v1.pdf`, titled “Từ suy giảm doanh thu đến phục hồi tăng trưởng” | Team-reported business findings and forecasting narrative |
-| Supplied `Datathon2026_Round1.zip` | Source inspection, archived metrics, notebooks, and submission dates |
-| [Original team repository](https://github.com/DinhVinhBinhNghi/Datathon2026) | Public access to the code and artifacts |
-| Source commit `97d72fc24bca0fc40763890ac717c1ccb07f54cd` | Stable links to the reviewed version |
+This case study was prepared by reviewing a team report and a source archive supplied privately for portfolio preparation. The report supports the project context; inspection of the forecasting script supports the implementation description.
 
-The supplied forecasting script and the pinned public script have the same Git blob SHA: `4b87c3538d56cf976f9497c10bc657cd1326db9f`.
+The public portfolio does not reproduce or link the original report, archive, notebooks, charts, prediction files, dataset-derived business metrics, or source repository containing those materials. Source identifiers and original submission date ranges are omitted. Model architecture and implementation parameters are described separately from measured outcomes.
 
-The supplied report identifies the team as **IKIGAI**. The archived repository README uses **The Gridbreakers**. This page uses the report's team name and preserves the original source attribution.
+This boundary applies to the current portfolio pages. It does not establish the access settings of copies held elsewhere or remove earlier versions from Git history.
 
 ## Personal contribution and team outcome
 
-Nguyễn Thanh Ngân contributed to audit and cleaning, feature engineering, ensemble forecasting, leakage-aware validation work, optimization, and post-processing. The team code, analysis, and charts are not presented as independently authored by Ngân.
+Nguyễn Thanh Ngân contributed to audit and cleaning, feature engineering, ensemble forecasting, leakage-aware validation work, optimization, and post-processing. The supplied report identifies team **IKIGAI**. The team code, analysis, charts, and report are not presented as independently authored by Ngân.
 
 The Third Prize is a **DATATHON 2026 Final team award**. It is not a Round 1 model ranking or a forecasting accuracy measure.
 
 ## Claims retained and qualified
 
-| Claim | Treatment in this portfolio |
+| Claim | Basis and limitation |
 | --- | --- |
-| Daily revenue decreased by approximately 41.5% after 2018 | Attributed to the team report; consistent with its archived metric file |
-| Sessions increased 31%; conversion decreased from 0.97% to 0.35% | Attributed to the report; descriptive comparison, not a causal experiment |
-| Ensemble uses 33 features, three boosting libraries, and five seeds | Confirmed by source inspection |
-| Archived submission contains 548 dates | Counted from the supplied CSV: 2023-01-01 to 2024-07-01 |
-| 2021–2022 holdout evaluation | Reported in the document; not reproduced by the reviewed final script |
-| Grouped SHAP percentages | Hard-coded in the reviewed script; not used here as verified model explanations |
-| H1/2024 revenue recovery of +331M | A report scenario based on assumed conversion/retention improvements, not achieved business impact |
-| Number of priority inventory SKUs | Omitted: the supplied report and archived metric file contain different counts |
+| Ensemble uses 33 features, three boosting libraries, and five seeds | Confirmed by source inspection during portfolio preparation; not evidence of predictive accuracy |
+| Revenue combines model predictions with seasonal summaries | Confirmed by source inspection; the weight-selection process has not been reproduced |
+| Time-based holdout evaluation | Described in the supplied report; the reviewed final script does not implement that evaluation |
+| Grouped explanation percentages | Fixed values in the reviewed script; not verified SHAP explanations |
+| Business improvement scenarios | Proposed scenarios, not demonstrated production impact; numerical claims are omitted |
 
 ## Reproduction status
 
-Completed for this portfolio:
+Portfolio preparation included reading the supplied report and forecasting script and checking the implementation behind the feature count, model blend, and exported explanation tables. This is a source review, not an independently reproduced experiment.
 
-- Read the supplied report and forecasting script.
-- Verified the public script matches the supplied archive.
-- Counted submission rows and inspected date endpoints.
-- Checked the implementation behind the feature count, model blend, and exported explanation tables.
+The following have not been completed for this case study:
 
-Not completed:
-
-- Training on the original competition CSVs, which are absent from the supplied ZIP.
-- Independent reproduction of the report's business metrics or leaderboard score.
+- Training on the original competition CSVs, which are absent from the supplied archive.
+- Independent reproduction of business metrics or a leaderboard score.
 - Leakage-safe backtesting with fold-specific feature summaries.
 - Fresh SHAP calculation or validation of the fixed explanation percentages.
 
+The separate [synthetic recommender demo](../hybrid-product-recommender/README.md) can be run without the competition materials. It is a different project and does not validate this forecasting pipeline.
+
 ## Attribution
 
-The source repository, figures, notebooks, and competition report are team work. This portfolio adds a personal case study and a documented technical review. Source links stay with the original team repository; this page does not apply a new license to those materials.
+The original implementation and competition materials remain team work. This portfolio adds a personal case study and a documented technical review. It does not redistribute or apply a new license to the original materials.

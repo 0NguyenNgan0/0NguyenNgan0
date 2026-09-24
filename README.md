@@ -30,7 +30,7 @@ A team project combining e-commerce business diagnosis with revenue and COGS for
 
 My contribution: data audit/cleaning, features, ensemble forecasting, leakage-aware validation, optimization, and post-processing.
 
-[Case study](projects/revenue-forecasting-datathon/README.md) · [Team code](https://github.com/DinhVinhBinhNghi/Datathon2026)
+[Case study](projects/revenue-forecasting-datathon/README.md) · [Technical notes](projects/revenue-forecasting-datathon/TECHNICAL_NOTES.md)
 
 ## More to explore
 
@@ -41,4 +41,4 @@ My contribution: data audit/cleaning, features, ensemble forecasting, leakage-aw
 **Project tools:** Python · Jupyter · Tableau  
 **Focus:** data preparation, predictive modeling, evaluation, and technical communication.
 
-Each case study distinguishes my contribution from the team's output. Original datasets remain private; the runnable demo uses synthetic data only.
+Each case study distinguishes my contribution from the team's output. This portfolio does not distribute original datasets; the runnable demo uses synthetic data only.
