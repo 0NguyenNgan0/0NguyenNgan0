@@ -4,7 +4,7 @@
 
 I'm Nguyễn Thanh Ngân, interested in data analytics, machine learning, and applied AI. I'm seeking **Data Analytics, Data Science, and Applied AI internships**.
 
-[LinkedIn](https://www.linkedin.com/in/ng%C3%A2n-nguy%E1%BB%85n-796678359) · [All five projects](projects/README.md)
+[LinkedIn](https://www.linkedin.com/in/ng%C3%A2n-nguy%E1%BB%85n-796678359) · [All six projects](projects/README.md)
 
 ## Featured projects
 
@@ -34,6 +34,7 @@ My contribution: data audit/cleaning, features, ensemble forecasting, leakage-aw
 
 ## More to explore
 
+- [Reddit Sarcasm Detection](projects/reddit-sarcasm-detection/README.md) — team NLP study; preprocessing/EDA, handcrafted features, RoBERTa fine-tuning, and error analysis.
 - [Tableau business intelligence](projects/data-explorers-tableau/README.md) — cleaning/modeling, task coordination, and presentation structure.
 - [Adaptive Traffic Lights · 3MT 2025](projects/adaptive-traffic-lights-3mt/README.md) — original idea and proposal presentation; **First Prize at faculty level**, a team award.
 
