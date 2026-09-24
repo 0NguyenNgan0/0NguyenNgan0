@@ -3,7 +3,7 @@
 
 A research communication project proposing traffic-light timing that responds to changing traffic conditions.
 
-**My role:** originated the idea, framed the problem and proposed solution, and contributed to presenting and defending the proposal.
+**My role:** originated the idea and helped frame the problem and proposed solution. Other team members presented the proposal.
 
 [Design & evidence](DESIGN_NOTES.md) · [All projects](../README.md) · [Back to my profile](../../README.md)
 
@@ -29,9 +29,9 @@ The presentation communicates a concept. It does not provide enough implementati
 - **Original idea:** proposed the adaptive traffic-light concept.
 - **Problem framing:** connected rigid signal timing with waiting and unequal traffic demand.
 - **Solution framing:** helped organize the idea into observation, measurement, and a control decision.
-- **Communication:** contributed to explaining and defending the proposal in a concise presentation.
+- **Communication preparation:** helped frame how the team would explain the proposal.
 
-My contribution centered on the idea and its communication. The computer-vision implementation, controller code, and SUMO experiments are not claimed as work I independently implemented.
+My contribution centered on the idea and framing. I did not personally give the 3MT presentation. The computer-vision implementation, controller code, and SUMO experiments are not claimed as work I independently implemented.
 
 ## Outcome
 

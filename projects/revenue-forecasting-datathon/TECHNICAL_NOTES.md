@@ -6,48 +6,29 @@
 
 This page documents the team's existing final-submission script. It is not a new implementation or a claim that a fresh training run has been completed.
 
-The source was supplied privately for review. Original files and links to repositories containing the competition materials are omitted from this public page. Numerical constants below describe implementation settings, not measured business outcomes.
+The source was supplied privately for review. Original files and links to repositories containing the competition materials are omitted from this public page. Internal configuration values are omitted as well.
 
 ## 1. Build calendar and historical summaries
 
 The script derives date fields and cyclical features, then adds historical summaries from sales, inventory, web traffic, returns, and shipments. A separate input specifies the prediction dates. This page describes input categories without distributing records or their aggregate values.
 
-The final feature list contains:
-
-- 8 calendar features.
-- 8 Fourier/cyclical features.
-- 3 seasonal revenue summaries.
-- 8 auxiliary operational aggregates.
-- 6 data-derived pattern features.
+The features cover calendar effects, cyclical transforms, seasonal revenue summaries, operational aggregates, and data-derived patterns. Any summaries based on the target must be rebuilt at each validation cutoff.
 
 ## 2. Train and combine revenue models
 
-The script fits LightGBM, XGBoost, and CatBoost to `log1p(Revenue)` using seeds `42, 1337, 2024, 7, 99`. Predictions are transformed back with `expm1` and averaged across models and seeds.
+The script fits LightGBM, XGBoost, and CatBoost to a log-transformed revenue target. Predictions are transformed back and averaged across models and runs.
 
-This runs separately for earlier and later historical periods. The final revenue blend is equivalent to:
+This runs separately for earlier and later historical periods. The final prediction combines their ensemble outputs with seasonal profiles, then clips negative revenue to zero.
 
-```text
-model_signal = 0.54 * ensemble_A + 0.46 * ensemble_B
-
-Revenue = 0.58 * model_signal
-        + 0.02 * day_of_year_median
-        + 0.04 * month_weekday_mean
-        + 0.36 * month_day_median
-```
-
-Revenue is then clipped to be non-negative.
-
-The numerical weights are fixed in the script. The report describes validation and sensitivity checks, but the reviewed script does not reproduce the process that selected those weights.
+The blend weights are fixed in the script. The report describes validation and sensitivity checks, but the reviewed script does not reproduce the process that selected those weights.
 
 ## 3. Estimate COGS
 
-A five-seed LightGBM ensemble predicts margin separately for each period. The margin target and predictions are clipped to `[0.02, 0.35]`.
+A LightGBM ensemble predicts margin separately for each period. The intermediate margin predictions are clipped within a configured range.
 
 The initial prediction is:
 
-```text
-COGS = Revenue * (1 - blended_margin)
-```
+Cost of goods sold is calculated from predicted revenue and estimated margin.
 
 Historical month/day COGS-to-revenue patterns then adjust selected dates. These adjustments can move final COGS outside the initial margin bounds; the clipped margin should not be described as a guarantee on the final output.
 

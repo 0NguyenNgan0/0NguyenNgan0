@@ -10,7 +10,7 @@ I'm Nguyễn Thanh Ngân, interested in data analytics, machine learning, and ap
 
 ### Marketplace Learning-to-Rank · Datathon 2026 Final
 
-Real-estate recommendations using five candidate sources, LightGBM LambdaRank, and marketplace-oriented reranking. **Team IKIGAI won Third Prize.**
+Real-estate recommendations using candidate retrieval, LightGBM LambdaRank, and marketplace-oriented reranking. **Team IKIGAI won Third Prize.**
 
 My contribution: assigned technical implementation work and presentation/defense within the team.
 
@@ -28,7 +28,7 @@ A new synthetic-data adaptation of a team course project; my original contributi
 
 A team project combining e-commerce business diagnosis with revenue and COGS forecasting.
 
-My contribution: data audit/cleaning, features, ensemble forecasting, leakage-aware validation, optimization, and post-processing.
+My contribution: data audit/cleaning, features, ensemble forecasting, validation review, optimization, and post-processing. The case study explains the remaining backtest limitations.
 
 [Case study](projects/revenue-forecasting-datathon/README.md) · [Technical notes](projects/revenue-forecasting-datathon/TECHNICAL_NOTES.md)
 
@@ -36,7 +36,7 @@ My contribution: data audit/cleaning, features, ensemble forecasting, leakage-aw
 
 - [Reddit Sarcasm Detection](projects/reddit-sarcasm-detection/README.md) — team NLP study; preprocessing/EDA, handcrafted features, RoBERTa fine-tuning, and error analysis.
 - [Tableau business intelligence](projects/data-explorers-tableau/README.md) — cleaning/modeling, task coordination, and presentation structure.
-- [Adaptive Traffic Lights · 3MT 2025](projects/adaptive-traffic-lights-3mt/README.md) — original idea and proposal presentation; **First Prize at faculty level**, a team award.
+- [Adaptive Traffic Lights · 3MT 2025](projects/adaptive-traffic-lights-3mt/README.md) — original idea and proposal framing; **First Prize at faculty level**, a team award.
 
 **Project tools:** Python · Jupyter · Tableau  
 **Focus:** data preparation, predictive modeling, evaluation, and technical communication.

@@ -33,7 +33,7 @@ All methods use the same popularity fallback for new users; their new-user score
 
 ## Validation performed
 
-- Ten standard-library unit tests passed, covering chronological boundaries, duplicate removal, deterministic data generation, cold-start routing, seen-item exclusion, top-K behavior, ALS objective reduction, cold-item content retrieval, hand-calculated metrics, holdout argument usage, repeat-consumption exclusions, and invalid inputs.
+- The original recorded run passed ten standard-library tests covering chronological boundaries, duplicate removal, deterministic data generation, cold-start routing, seen-item exclusion, top-K behavior, ALS objective reduction, cold-item content retrieval, hand-calculated metrics, holdout argument usage, repeat-consumption exclusions, and invalid inputs. The current suite has 13 tests, including three CLI input/output checks added later.
 - The CLI completed with seed 42 / K=10 and an alternate seed / K=5.
 - Every notebook code cell executed sequentially with the project environment; the notebook outputs contain only synthetic examples and aggregate results. A Jupyter UI session was not used for this check.
 

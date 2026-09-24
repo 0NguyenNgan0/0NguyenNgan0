@@ -49,7 +49,7 @@ Any future evaluation should keep the setup and limitations beside the results. 
 
 ## Contribution boundaries
 
-Nguyễn Thanh Ngân's confirmed contributions are the original idea, problem and solution framing, and participation in presenting or defending the proposal.
+Nguyễn Thanh Ngân's confirmed contributions are the original idea and problem and solution framing. The team presented the proposal; Ngân did not personally present it.
 
 The portfolio does not attribute the entire technical implementation to Ngân, infer authorship from the source filename, or claim a deployed traffic-control system.
 

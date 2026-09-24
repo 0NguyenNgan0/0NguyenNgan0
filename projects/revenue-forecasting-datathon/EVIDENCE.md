@@ -6,13 +6,13 @@
 
 This case study was prepared by reviewing a team report and a source archive supplied privately for portfolio preparation. The report supports the project context; inspection of the forecasting script supports the implementation description.
 
-The public portfolio does not reproduce or link the original report, archive, notebooks, charts, prediction files, dataset-derived business metrics, or source repository containing those materials. Source identifiers and original submission date ranges are omitted. Model architecture and implementation parameters are described separately from measured outcomes.
+The public portfolio does not reproduce or link the original report, archive, notebooks, charts, prediction files, dataset-derived business metrics, or source repository containing those materials. Source identifiers, internal configuration values, and original submission date ranges are omitted. Model architecture is described separately from measured outcomes.
 
 This boundary applies to the current portfolio pages. It does not establish the access settings of copies held elsewhere or remove earlier versions from Git history.
 
 ## Personal contribution and team outcome
 
-Nguyễn Thanh Ngân contributed to audit and cleaning, feature engineering, ensemble forecasting, leakage-aware validation work, optimization, and post-processing. The supplied report identifies team **IKIGAI**. The team code, analysis, charts, and report are not presented as independently authored by Ngân.
+Nguyễn Thanh Ngân contributed to audit and cleaning, feature engineering, ensemble forecasting, validation review, optimization, and post-processing. The supplied report identifies team **IKIGAI**. The team code, analysis, charts, and report are not presented as independently authored by Ngân.
 
 The Third Prize is a **DATATHON 2026 Final team award**. It is not a Round 1 model ranking or a forecasting accuracy measure.
 
@@ -20,7 +20,7 @@ The Third Prize is a **DATATHON 2026 Final team award**. It is not a Round 1 mod
 
 | Claim | Basis and limitation |
 | --- | --- |
-| Ensemble uses 33 features, three boosting libraries, and five seeds | Confirmed by source inspection during portfolio preparation; not evidence of predictive accuracy |
+| Ensemble uses several boosting libraries and historical feature groups | Confirmed by source inspection during portfolio preparation; not evidence of predictive accuracy |
 | Revenue combines model predictions with seasonal summaries | Confirmed by source inspection; the weight-selection process has not been reproduced |
 | Time-based holdout evaluation | Described in the supplied report; the reviewed final script does not implement that evaluation |
 | Grouped explanation percentages | Fixed values in the reviewed script; not verified SHAP explanations |
@@ -28,7 +28,7 @@ The Third Prize is a **DATATHON 2026 Final team award**. It is not a Round 1 mod
 
 ## Reproduction status
 
-Portfolio preparation included reading the supplied report and forecasting script and checking the implementation behind the feature count, model blend, and exported explanation tables. This is a source review, not an independently reproduced experiment.
+Portfolio preparation included reading the supplied report and forecasting script and checking the implementation behind the feature groups, model blend, and exported explanation tables. This is a source review, not an independently reproduced experiment.
 
 The following have not been completed for this case study:
 

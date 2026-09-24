@@ -3,7 +3,7 @@
 
 Investigating e-commerce revenue changes and forecasting daily revenue and cost of goods sold (COGS).
 
-**My focus:** contributions to data auditing and cleaning, feature engineering, ensemble forecasting, leakage-aware validation, model optimization, and post-processing.
+**My focus:** contributions to data auditing and cleaning, feature engineering, ensemble forecasting, validation review, model optimization, and post-processing.
 
 [Technical notes](TECHNICAL_NOTES.md) · [Evidence & limitations](EVIDENCE.md) · [Back to my profile](../../README.md)
 
@@ -22,7 +22,7 @@ These are analytical questions, not published findings about the underlying busi
 
 ## My contribution within the team
 
-I contributed to data auditing and cleaning, feature engineering, ensemble forecasting, validation work aimed at reducing leakage, model optimization, and post-processing. The pipeline, business analysis, charts, and report are team deliverables; this page does not claim sole ownership of them.
+I contributed to data auditing and cleaning, feature engineering, ensemble forecasting, validation review, model optimization, and post-processing. Leakage-safe backtesting has not been reproduced for this portfolio. The pipeline, business analysis, charts, and report are team deliverables; this page does not claim sole ownership of them.
 
 The team's **Third Prize at the DATATHON 2026 Final** is a separate competition achievement. This case study covers the **Round 1 forecasting project**.
 
@@ -30,9 +30,9 @@ The team's **Third Prize at the DATATHON 2026 Final** is a separate competition 
 
 | Component | Implementation in the reviewed script |
 | --- | --- |
-| Calendar and seasonal inputs | 33 features spanning calendar fields, sine/cosine transforms, seasonal target summaries, operational aggregates, and data-derived flags |
+| Calendar and seasonal inputs | Calendar fields, cyclical transforms, seasonal target summaries, and operational aggregates |
 | Two training periods | Separate ensembles for earlier and later historical periods |
-| Revenue ensemble | LightGBM, XGBoost, and CatBoost, each trained with five seeds for each period |
+| Revenue ensemble | LightGBM, XGBoost, and CatBoost across multiple training runs |
 | Seasonal blend | Fixed combination of model predictions and historical seasonal profiles |
 | Period blend | Fixed combination of the two period-specific ensembles |
 | COGS | Revenue multiplied by one minus estimated margin, followed by historical-pattern adjustments |

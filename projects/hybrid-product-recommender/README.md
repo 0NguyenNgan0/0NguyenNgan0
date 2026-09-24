@@ -6,7 +6,7 @@
 
 A small product recommendation pipeline combining collaborative signals with product metadata. It demonstrates how recommendations change for users with rich history, sparse history, or no history, and compares four methods on a chronological holdout.
 
-This is a **new portfolio reimplementation inspired by a team course project**, not a reproduction of its original experiment or benchmark. The original dataset, notebook outputs, report, personal identifiers, and team files are not distributed here.
+This is a **new AI-assisted portfolio reimplementation inspired by a team course project**, not a reproduction of its original experiment or benchmark. The original dataset, notebook outputs, report, personal identifiers, and team files are not distributed here.
 
 [Portfolio index](../README.md) · [Design and evaluation](DESIGN.md) · [Demo notebook](demo.ipynb) · [Recorded synthetic run](sample_report.json)
 
