@@ -12,15 +12,28 @@ from .evaluate import evaluate
 from .model import HybridRecommender
 
 
+def unit_interval(value):
+    """Reject invalid blend weights before generating data or fitting a model."""
+    try:
+        weight = float(value)
+    except ValueError:
+        raise argparse.ArgumentTypeError("must be a finite number between 0 and 1")
+    if not 0 <= weight <= 1:
+        raise argparse.ArgumentTypeError("must be a finite number between 0 and 1")
+    return weight
+
+
 def main():
     parser = argparse.ArgumentParser(description="Synthetic-only hybrid recommender demo")
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--k", type=int, default=10)
+    parser.add_argument("--als-weight", type=unit_interval, default=0.6,
+                        help="ALS share for warm-user hybrid scoring (0 to 1; default: 0.6)")
     parser.add_argument("--output", type=Path, help="Optional synthetic aggregate JSON report")
     args = parser.parse_args()
     catalog, events = make_synthetic_data(args.seed)
     train, test = temporal_split(events)
-    model = HybridRecommender(seed=args.seed).fit(catalog, train)
+    model = HybridRecommender(seed=args.seed, als_weight=args.als_weight).fit(catalog, train)
     report = evaluate(model, test, args.k)
     report["configuration"] = {"seed": args.seed, "cutoff": CUTOFF.isoformat(),
                                "products": len(catalog), "train_events": len(train),

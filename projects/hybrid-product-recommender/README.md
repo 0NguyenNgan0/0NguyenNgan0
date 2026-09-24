@@ -45,6 +45,19 @@ python -m recommender --seed 42 --k 10 --output outputs/report.json
 python -m recommender --seed 17 --k 5
 ```
 
+To compare the default blend with 30% ALS / 70% content while keeping the same
+synthetic data and K:
+
+```bash
+python -m recommender --seed 42 --k 10 --als-weight 0.6 --output outputs/baseline.json
+python -m recommender --seed 42 --k 10 --als-weight 0.3 --output outputs/weight_03.json
+```
+
+`--als-weight` accepts a finite value from 0 to 1 and defaults to 0.6. It affects
+only the warm-user hybrid blend; sparse users still use content and new users
+still use popularity. See the [recorded weight experiment](WEIGHT_EXPERIMENT.md)
+for results and interpretation. The default remains unchanged.
+
 To explore the notebook, open `demo.ipynb` in a Python notebook editor with the same environment, or install JupyterLab separately (`python -m pip install jupyterlab`) and run `jupyter lab demo.ipynb` from this folder. Jupyter is optional; the CLI is the primary reproducible entry point.
 
 ## Automated checks
